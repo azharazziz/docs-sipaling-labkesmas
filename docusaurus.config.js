@@ -104,23 +104,48 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
-            title: 'Docs',
+            title: 'Navigasi',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Dokumentasi',
                 to: '/docs/intro',
+              },
+              {
+                label: 'Blog',
+                to: '/blog',
               },
             ],
           },
           {
-            title: 'Contact Me',
+            title: 'Layanan',
+            items: [
+              {
+                label: 'Layanan Internal',
+                to: '/docs/features/internal',
+              },
+              {
+                label: 'Layanan Pelanggan',
+                to: '/docs/features/external',
+              },
+              {
+                label: 'Spesifikasi Sistem',
+                to: '/docs/specification',
+              },
+            ],
+          },
+          {
+            title: 'Kontak',
             items: [
               {
                 label: 'Email',
                 href: 'mailto:azharazziz13@gmail.com',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/azharazziz',
               },
               {
                 label: 'LinkedIn',
@@ -128,21 +153,11 @@ const config = {
               },
             ],
           },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/azharazziz',
-              },
-            ],
-          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Portal Labkesmas Magelang, Inc. Built with Docusaurus.`,
+        copyright: `<div style="text-align: center;">
+          <p style="margin: 0.5rem 0;">© ${new Date().getFullYear()} Portal Labkesmas Magelang. Semua hak dilindungi.</p>
+          <p style="margin: 0.5rem 0; font-size: 0.9rem; opacity: 0.7;">Dibangun dengan teknologi modern untuk layanan kesehatan yang lebih baik.</p>
+        </div>`,
       },
       prism: {
         theme: prismThemes.github,
