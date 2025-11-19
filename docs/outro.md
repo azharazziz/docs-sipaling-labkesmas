@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 # Penutup
 Panduan Penggunaan Portal Labkesmas Magelang ini disusun sebagai acuan bagi seluruh pengguna dalam mengoperasikan sistem aplikasi secara tepat dan efektif. Melalui panduan ini diharapkan setiap pengguna — baik internal maupun eksternal — dapat memahami fungsi, alur kerja, serta tata cara penggunaan fitur yang tersedia di portal.
