@@ -208,3 +208,17 @@ Setelah semua data diisikan dan diverifikasi kebenarannya, klik tombol "Kirim" u
 ![55](img/55.png ':size=100%')
 Pengguna dapat mencetak label pengiriman dengan menekan tombol Cetak Label Pengiriman.
 
+### Pelacakan Pendaftaran Pengiriman Sampel
+Setelah melakukan pendaftaran pengiriman sampel, pengguna dapat melacak status pendaftaran mereka melalui fitur pelacakan yang disediakan di portal. Untuk melacak pendaftaran, pengguna dapat mengakses halaman depan Portal Labkesmas magelang (https://portal.labkesmasmagelang.go.id), kemudian memilih tab “Juragan (Just For pelanggan) dan memilih menu “Lacak Pendaftaran Pengiriman Sampel”.
+
+![63](img/63.png ':size=100%')
+
+Pada halaman pelacakan, pengguna diminta untuk memasukkan nomor pendaftaran yang telah diterima saat proses pendaftaran. Setelah memasukkan nomor pendaftaran, klik tombol "Lacak" untuk melihat status terkini dari pendaftaran pengiriman sampel.
+
+![64](img/64.png ':size=100%')
+
+Jika nomor pendaftaran valid, pengguna akan diminta untuk melakukan verifikasi data menggunakan 5 digit terakhir nomor telepon yang telah didaftarkan sebelumnya. Setelah verifikasi berhasil, pengguna akan dapat melihat informasi lengkap mengenai status pendaftaran mereka, termasuk tahap proses yang sedang berlangsung dan perkiraan waktu penyelesaian layanan.
+
+![65](img/65.png ':size=100%')
+
+Jika sampel kiriman telah selesai diperiksa, pengguna dapat mengunduh laporan hasil pemeriksaan langsung dari halaman pelacakan dengan mengklik tautan unduh yang tersedia.-

@@ -1,6 +1,6 @@
 ---
-slug: whats-new-on-v2
-title: What's New on v2
+slug: version-2-0-is-here-exciting-new-features-and-improvements
+title: "Version 2.0 is Here: Exciting New Features and Improvements!"
 authors: azharazziz
 tags: [new]
 ---
@@ -25,6 +25,7 @@ We are excited to announce the release of version 2 of our platform! This update
   - Dynamic list of examination types
   - Listing examination prices
 - Addition of the Attendance module
+
 We hope you enjoy the new features and improvements in version 2.0
 
 Thank you for being a valued member of our community!
