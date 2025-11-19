@@ -25,6 +25,81 @@
   pointer-events: none;
 }
 
+.heroBanner::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.particlesContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+}
+
+.particle1 {
+  width: 100px;
+  height: 100px;
+  top: 10%;
+  left: 5%;
+  animation: floatParticle1 8s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+.particle2 {
+  width: 60px;
+  height: 60px;
+  top: 60%;
+  right: 10%;
+  animation: floatParticle2 10s ease-in-out infinite;
+  opacity: 0.4;
+}
+
+.particle3 {
+  width: 80px;
+  height: 80px;
+  bottom: 15%;
+  left: 15%;
+  animation: floatParticle3 12s ease-in-out infinite;
+  opacity: 0.5;
+}
+
+.particle4 {
+  width: 50px;
+  height: 50px;
+  top: 20%;
+  right: 20%;
+  animation: floatParticle4 9s ease-in-out infinite;
+  opacity: 0.3;
+}
+
+.particle5 {
+  width: 70px;
+  height: 70px;
+  bottom: 30%;
+  right: 5%;
+  animation: floatParticle5 11s ease-in-out infinite;
+  opacity: 0.45;
+}
+
 .heroContent {
   display: flex;
   align-items: center;
@@ -33,13 +108,38 @@
   margin: 0 auto;
   width: 100%;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   gap: 4rem;
 }
 
 .heroText {
   flex: 1;
   color: white;
+  position: relative;
+}
+
+.heroText::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 20px;
+  width: 4px;
+  height: 80px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
+  border-radius: 2px;
+  animation: slideDown 2s ease-in-out infinite;
+}
+
+.heroText::after {
+  content: '';
+  position: absolute;
+  left: -20px;
+  bottom: 50px;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .heroTitle {
@@ -49,6 +149,33 @@
   margin-bottom: 1rem !important;
   color: white !important;
   letter-spacing: -0.5px;
+  animation: slideInLeft 0.8s ease-out;
+  position: relative;
+}
+
+.heroTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
+  border-radius: 2px;
+  animation: slideInWidth 1s ease-out 0.3s both;
+}
+
+.versionBadge {
+  font-size: 0.55em;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: inline-block;
+  animation: slideInUp 0.8s ease-out 0.5s both;
+  backdrop-filter: blur(10px);
 }
 
 .heroSubtitle {
@@ -57,12 +184,14 @@
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2rem;
   line-height: 1.5;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .buttons {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
 .buttonPrimary {
@@ -75,12 +204,29 @@
   text-decoration: none !important;
   transition: all 0.3s ease !important;
   display: inline-block !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonPrimary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 185, 129, 0.1);
+  transition: left 0.4s ease;
 }
 
 .buttonPrimary:hover {
   background-color: rgba(255, 255, 255, 0.9) !important;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25) !important;
+}
+
+.buttonPrimary:hover::before {
+  left: 100%;
 }
 
 .buttonSecondary {
@@ -93,12 +239,29 @@
   text-decoration: none !important;
   transition: all 0.3s ease !important;
   display: inline-block !important;
+  position: relative;
+}
+
+.buttonSecondary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: -1;
 }
 
 .buttonSecondary:hover {
   background-color: rgba(255, 255, 255, 0.1) !important;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25) !important;
+}
+
+.buttonSecondary:hover::before {
+  transform: scaleX(1);
 }
 
 .buttonLarge {
@@ -111,13 +274,72 @@
   justify-content: center;
   align-items: center;
   height: 400px;
+  animation: slideInRight 0.8s ease-out;
 }
 
-.heroSvg {
+.logoContainer {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: zoomIn 0.8s ease-out;
+}
+
+.circleDecoration {
+  position: absolute;
   width: 100%;
   height: 100%;
-  max-width: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.4);
   animation: float 3s ease-in-out infinite;
+}
+
+.circleDecoration::before {
+  content: '';
+  position: absolute;
+  inset: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  animation: rotate 8s linear infinite;
+}
+
+.circleDecoration::after {
+  content: '';
+  position: absolute;
+  inset: 60px;
+  border-radius: 50%;
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  animation: rotateReverse 12s linear infinite;
+}
+
+.heroLogo {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.2));
+  animation: float 3s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
+}
+
+.heroLogo::before {
+  content: '';
+  position: absolute;
+  inset: -40px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    rgba(255, 255, 255, 0.3) 0deg,
+    rgba(255, 255, 255, 0) 90deg,
+    rgba(255, 255, 255, 0.3) 180deg,
+    rgba(255, 255, 255, 0) 270deg,
+    rgba(255, 255, 255, 0.3) 360deg
+  );
+  animation: pulse 2s ease-in-out infinite;
+  z-index: -1;
 }
 
 @keyframes float {
@@ -126,6 +348,153 @@
   }
   50% {
     transform: translateY(-20px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.3;
+  }
+}
+
+@keyframes slideDown {
+  0%, 100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(30px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60px;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes floatParticle1 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(30px, -30px) rotate(90deg);
+  }
+  50% {
+    transform: translate(0, -50px) rotate(180deg);
+  }
+  75% {
+    transform: translate(-30px, -30px) rotate(270deg);
+  }
+}
+
+@keyframes floatParticle2 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+  50% {
+    transform: translate(-40px, 30px) rotate(180deg);
+  }
+}
+
+@keyframes floatParticle3 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(25px, -40px);
+  }
+  66% {
+    transform: translate(-25px, 25px);
+  }
+}
+
+@keyframes floatParticle4 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(35px, -35px) scale(1.2);
+  }
+}
+
+@keyframes floatParticle5 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-30px, -40px);
   }
 }
 
@@ -156,6 +525,16 @@
     width: 100%;
     height: 300px;
     max-width: 100%;
+  }
+
+  .logoContainer {
+    width: 280px;
+    height: 280px;
+  }
+
+  .heroLogo {
+    width: 200px;
+    height: 200px;
   }
 }
 

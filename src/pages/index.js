@@ -11,10 +11,18 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={styles.heroBanner}>
+      <div className={styles.particlesContainer}>
+        <div className={styles.particle + ' ' + styles.particle1}></div>
+        <div className={styles.particle + ' ' + styles.particle2}></div>
+        <div className={styles.particle + ' ' + styles.particle3}></div>
+        <div className={styles.particle + ' ' + styles.particle4}></div>
+        <div className={styles.particle + ' ' + styles.particle5}></div>
+      </div>
       <div className={styles.heroContent}>
         <div className={styles.heroText}>
           <Heading as="h1" className={styles.heroTitle}>
             {siteConfig.title}
+            <sup className={styles.versionBadge}>{siteConfig.customFields.version}</sup>
           </Heading>
           <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
           <div className={styles.buttons}>
@@ -31,21 +39,10 @@ function HomepageHeader() {
           </div>
         </div>
         <div className={styles.heroIllustration}>
-          <svg viewBox="0 0 300 300" className={styles.heroSvg}>
-            <defs>
-              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style={{stopColor: '#10b981', stopOpacity: 1}} />
-                <stop offset="100%" style={{stopColor: '#059669', stopOpacity: 1}} />
-              </linearGradient>
-            </defs>
-            <circle cx="150" cy="150" r="140" fill="url(#grad1)" opacity="0.1" />
-            <circle cx="150" cy="150" r="100" fill="none" stroke="url(#grad1)" strokeWidth="2" opacity="0.3" />
-            <g transform="translate(150, 150)">
-              <circle cx="0" cy="0" r="50" fill="url(#grad1)" />
-              <path d="M -15,-15 L 15,-15 L 15,5 L -15,5 Z" fill="white" />
-              <path d="M -15,10 L 15,10 L 15,30 L -15,30 Z" fill="white" />
-            </g>
-          </svg>
+          <div className={styles.logoContainer}>
+            <div className={styles.circleDecoration}></div>
+            <img src="/img/logo.svg" alt="Logo" className={styles.heroLogo} />
+          </div>
         </div>
       </div>
     </header>

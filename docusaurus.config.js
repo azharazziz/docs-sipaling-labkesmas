@@ -14,6 +14,11 @@ const config = {
   tagline: 'Akurat, Responsif, dan Berkelanjutan',
   favicon: 'img/favicon.ico',
 
+  // Custom fields for the site
+  customFields: {
+    version: 'v2.0',
+  },
+
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
