@@ -28,13 +28,13 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <Link
               className={clsx(styles.buttonPrimary, styles.buttonLarge)}
-              to="/docs/intro">
-              Mulai Sekarang
+              to="https://portal.labkesmasmagelang.go.id">
+              Akses Portal Labkesmas
             </Link>
             <Link
               className={clsx(styles.buttonSecondary, styles.buttonLarge)}
               to="/docs/overview">
-              Pelajari Lebih Lanjut
+              Pelajari Cara Penggunaannya
             </Link>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
+      title={`Dokumentasi ${siteConfig.title}`}
       description="Portal kesehatan modern dan responsif untuk Labkesmas Magelang">
       <HomepageHeader />
       <main>

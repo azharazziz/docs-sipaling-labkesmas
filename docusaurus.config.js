@@ -98,7 +98,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Panduan Penggunaan',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -161,7 +161,7 @@ const config = {
         ],
         copyright: `<div style="text-align: center;">
           <p style="margin: 0.5rem 0;">© ${new Date().getFullYear()} Portal Labkesmas Magelang. Semua hak dilindungi.</p>
-          <p style="margin: 0.5rem 0; font-size: 0.9rem; opacity: 0.7;">Dibangun dengan teknologi modern untuk layanan kesehatan yang lebih baik.</p>
+          <p style="margin: 0.5rem 0; font-size: 0.9rem; opacity: 0.7;">Build with ❤️ by <a href="https://azharazziz.my.id">Azhar Azziz</a></p>
         </div>`,
       },
       prism: {
