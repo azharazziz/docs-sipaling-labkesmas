@@ -4,55 +4,72 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
+    id: 'easy',
     title: 'Mudah Digunakan',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Portal Labkesmas didesain untuk kemudahan penggunaan. Mulailah dengan
-        dokumentasi kami dan buatlah situs web yang menakjubkan dalam waktu
-        singkat.
-      </>
-    ),
+    icon: '🎯',
+    description:
+      'Antarmuka intuitif yang dirancang untuk kemudahan penggunaan maksimal. Navigasi yang sederhana memastikan setiap pengguna dapat mengakses layanan dengan cepat.',
   },
   {
-    title: 'Fokus pada Hal yang Penting',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Portal Labkesmas difokuskan pada hal penting untuk memberikan layanan yang terbaik bagi pengguna.
-      </>
-    ),
+    id: 'secure',
+    title: 'Aman & Terpercaya',
+    icon: '🔒',
+    description:
+      'Keamanan data adalah prioritas utama kami. Sistem enkripsi tingkat enterprise melindungi informasi kesehatan Anda.',
   },
   {
-    title: 'Dikembangkan dengan Cinta',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Portal Labkesmas dibangun oleh tim yang peduli dengan pengalaman pengembang dan dokumentasi yang hebat.
-      </>
-    ),
+    id: 'fast',
+    title: 'Cepat & Responsif',
+    icon: '⚡',
+    description:
+      'Performa optimal di semua perangkat. Aplikasi kami dioptimalkan untuk memberikan pengalaman terbaik di desktop maupun mobile.',
+  },
+  {
+    id: 'support',
+    title: 'Dukungan Pengguna',
+    icon: '💬',
+    description:
+      'Tim dukungan kami siap membantu Anda 24/7. Kami berkomitmen untuk memberikan layanan pelanggan terbaik.',
+  },
+  {
+    id: 'integrate',
+    title: 'Integrasi Sempurna',
+    icon: '🔗',
+    description:
+      'Terintegrasi dengan sistem labkesmas yang ada. Alur kerja yang mulus untuk efisiensi maksimal.',
+  },
+  {
+    id: 'modern',
+    title: 'Teknologi Modern',
+    icon: '🚀',
+    description:
+      'Dibangun dengan teknologi terkini untuk skalabilitas dan performa tinggi di era digital.',
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({id, icon, title, description}) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
+    <div className={styles.featureCard}>
+      <div className={styles.featureIcon}>{icon}</div>
+      <Heading as="h3" className={styles.featureTitle}>{title}</Heading>
+      <p className={styles.featureDescription}>{description}</p>
     </div>
   );
 }
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
+    <section className={styles.featuresSection}>
+      <div className={styles.featuresContainer}>
+        <div className={styles.featuresHeader}>
+          <Heading as="h2" className={styles.featuresTitle}>
+            Fitur Unggulan
+          </Heading>
+          <p className={styles.featuresSubtitle}>
+            Portal Labkesmas Magelang menyediakan solusi kesehatan komprehensif dengan fitur-fitur terdepan
+          </p>
+        </div>
+        <div className={styles.featureGrid}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
