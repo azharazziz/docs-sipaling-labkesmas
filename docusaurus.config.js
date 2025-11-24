@@ -137,7 +137,7 @@ const config = {
               },
               {
                 label: 'Spesifikasi Sistem',
-                to: '/docs/specification',
+                to: '/docs/specification/system-requirement',
               },
             ],
           },
