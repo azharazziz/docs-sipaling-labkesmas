@@ -16,7 +16,7 @@ const config = {
 
   // Custom fields for the site
   customFields: {
-    version: 'v2.0',
+    version: 'v2.5',
   },
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -83,7 +83,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/logo.svg',
       colorMode: {
         respectPrefersColorScheme: true,
       },
@@ -160,7 +160,7 @@ const config = {
           },
         ],
         copyright: `<div style="text-align: center;">
-          <p style="margin: 0.5rem 0;">© ${new Date().getFullYear()} Portal Labkesmas Magelang. Semua hak dilindungi.</p>
+          <p style="margin: 0.5rem 0;">© 2025 - ${new Date().getFullYear()} Portal Labkesmas Magelang. Semua hak dilindungi.</p>
           <p style="margin: 0.5rem 0; font-size: 0.9rem; opacity: 0.7;">Build with ❤️ by <a href="https://azharazziz.my.id">Azhar Azziz</a></p>
         </div>`,
       },

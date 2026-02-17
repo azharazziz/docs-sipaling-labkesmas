@@ -11,6 +11,33 @@ Aplikasi ini berfungsi sebagai portal layanan dan informasi bagi masyarakat, fas
 
 Portal Labkesmas Magelang bertujuan untuk meningkatkan kualitas layanan laboratorium kesehatan masyarakat melalui pemanfaatan teknologi informasi, sehingga dapat memberikan kontribusi positif terhadap upaya peningkatan kesehatan masyarakat di wilayah Magelang dan sekitarnya.
 
+## Apa yang Baru di Versi 2.5
+### Beberapa Peningkatan UI/UX
+- Menu navigasi ditingkatkan untuk memudahkan akses ke fitur-fitur utama
+- Responsivitas diperbaiki untuk perangkat mobile dan tablet
+- Skema warna dan tema diperbarui untuk tampilan visual yang lebih menarik
+- Desain beranda baru untuk menonjolkan bagian-bagian penting
+- Desain dashboard baru untuk interaksi pengguna yang lebih baik
+- Desain halaman login baru untuk pengalaman yang lebih ramah
+
+### Modul Kinerja Kantor
+- Penambahan modul Kinerja
+  - Pembuatan Laporan Kinerja
+  - Dashboard Pemantauan Kinerja
+  - Metrik Kinerja yang Dapat Disesuaikan
+
+### Modul Rencana Kerja
+- Penambahan modul Rencana Kerja
+  - Pembuatan dan Pengelolaan Rencana Kerja
+  - Alat Pemantauan Progres
+  - Publikasi Laporan Rencana Kerja ke Layanan Publik
+
+### Modul Penomoran Sampel
+- Penambahan modul Penomoran Sampel
+  - Pembuatan Nomor Sampel Otomatis
+  - Sistem Pelacakan Sampel
+  - Integrasi dengan Sistem Informasi Manajemen Laboratorium (LIMS)
+
 
 ## Apa yang Baru di Versi 2.0
 ### Layanan Publik
@@ -33,8 +60,8 @@ Portal Labkesmas Magelang bertujuan untuk meningkatkan kualitas layanan laborato
 
 ## Pengguna
 Portal ini dirancang untuk digunakan oleh beberapa kategori pengguna:
-- **Masyarakat umum/instansi lain** — untuk melakukan pendaftaran layanan pemeriksaan atau kegiatan yang diselenggarakan Labkesmas Magelang.
-- **Pegawai labkesmas magelang** — untuk mendukung kinerja balai Labkesmas Magelang
+- --Masyarakat umum/instansi lain-- — untuk melakukan pendaftaran layanan pemeriksaan atau kegiatan yang diselenggarakan Labkesmas Magelang.
+- --Pegawai labkesmas magelang-- — untuk mendukung kinerja balai Labkesmas Magelang
 
 ## Tujuan dan Manfaat
 Tujuan utama dari pengembangan Portal Labkesmas Magelang adalah untuk:
